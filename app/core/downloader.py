@@ -60,7 +60,7 @@ def download_video(url: str, format_id: str):
     except Exception as e:
         print("\nDownload failed:", e)
 
-def main():
+def run():
     if not has_ytdlp():
         print("yt-dlp is not installed. Please install it first.")
         return
@@ -82,4 +82,4 @@ def main():
             print("Download cancelled.")
 
 if __name__ == "__main__":
-    main()
+    run()
